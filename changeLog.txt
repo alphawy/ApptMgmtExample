@@ -1,0 +1,21 @@
+0. create-react-app
+1. add json server
+    npm install bootstrap
+    npm install @fortawesome/fontawesome-free
+    npm install redux
+    npm install react-redux
+    npm install react-router-dom
+    npm install axios
+    npm install react-bootstrap bootstrap
+
+    npm install --save-dev json-server
+    npm install --save-dev express
+    npm install --save-dev cors
+    npm install --save-dev chokidar
+    npm install --save-dev npm-run-all
+
+    node server:
+        todo-data.js
+        server.js
+    package.js -- convenient start up
+2.

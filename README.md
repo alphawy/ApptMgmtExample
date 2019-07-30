@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequsites
+* it needs node.js. install node.js, if you have not do so. 
+* make sure you have npm installed as well. npm usually installed with node. However, for any reasons you don't have it, install it.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Quick Start Guide: 
+0. download the project
+1. cd to the project root (where package.json lives), 
+2. download depend packages. 
+###  `npm install`
+3. run the application
+###  `npm start`
+    if everything turns out right, it shall open a browser and start the application
+    if for any reasons, the browser does not starts, type following url in your browser. (it has been tested with chrome)
+###  http://localhost:5000
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Brief Explanation
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The project work has two parts, the web service that supplies the time slots, and the web application that work with the time slots for appointments.
 
-### `npm test`
+`npm start` first bring up the web service at port 3550, then bring up the web server for the react application at port 5000. (see blow: for how tochange port)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The web service uses json-server package that dumps the content in the appointment-data.js as the response payload.
 
-### `npm run build`
+The react web application starts with the list of time slot available for select. Click on a time slot, brings up a popup, with two input field for name and phone. Key in any value to any of the field, will mark the corresponding time slot red. By clear out both name and phone, will reset the time slot to write.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click on the button below the list, brings up a summery of all the time slot you have clicked. You can change the values of the name and/or the phone in a batch mode. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Howto Change Port
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* The port of the react web service is defined in package.json. Search for 'reactstart', you will find the port in the same line
+* The port of the web service is defined in server.js. Your will find the variable port. 
