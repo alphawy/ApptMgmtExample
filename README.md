@@ -15,6 +15,11 @@
 ###  http://localhost:5000
 
 
+## For Windows only ...
+    open package.json, find the line contains "PORT=5000", remove the setting for the port. Run the application at the default port 3000
+    `http://localhost:3000`
+    for a reason I am still research, window npm does not accept "PORT=...". Above work around is tested working.
+
 ## Brief Explanation
 
 The project work has two parts, the web service that supplies the time slots, and the web application that work with the time slots for appointments.
