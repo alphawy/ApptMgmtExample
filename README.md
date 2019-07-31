@@ -23,7 +23,8 @@ The project work has two parts, the web service that supplies the time slots, an
 
 The web service uses json-server package that dumps the content in the appointment-data.js as the response payload.
 
-The react web application starts with the list of time slot available for select. Click on a time slot, brings up a popup, with two input field for name and phone. Key in any value to any of the field, will mark the corresponding time slot red. By clear out both name and phone, will reset the time slot to write.
+The react web application starts with the list of time slot available for select. Click on a time slot, brings up a popup, with two input field for name and phone. Key in any value to any of the field, will mark the corresponding time slot red. By clear out both name and phone, will reset the time slot to write. To find out the web service run,
+### http://localhost:3550/api/timeslots/1
 
 Click on the button below the list, brings up a summery of all the time slot you have clicked. You can change the values of the name and/or the phone in a batch mode. 
 

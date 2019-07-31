@@ -1,3 +1,5 @@
+Steps to set the dev env frome scratch
+
 0. create-react-app
 1. add json server
     npm install bootstrap
@@ -17,5 +19,7 @@
     node server:
         todo-data.js
         server.js
-    package.js -- convenient start up
-2.
+    package.js -- convenient start up, replace or add following line 
+        "start": "npm-run-all --parallel reactstart webservice",
+        "reactstart": "PORT=5000 react-scripts start",
+        "webservice": "node server.js",

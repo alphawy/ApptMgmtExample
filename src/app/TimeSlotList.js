@@ -26,10 +26,12 @@ export class TimeSlotList extends Component {
         this.setState({show: false});
     }
 
+    // the definition of the popup pane. 
     popupModel = () => {
         return (
             <Modal show={this.state.show} onHide={this.handleClose} size="lg">
                 <Modal.Body>
+                    {/* the content is defined in AppConnector.js */}
                     <AppointmentPopup />
                 </Modal.Body>
             </Modal>

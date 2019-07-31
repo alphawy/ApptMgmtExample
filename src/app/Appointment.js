@@ -23,8 +23,9 @@ export class AppointmentList extends Component {
             </div>
         </div>
         <div className="text-center">
+            This is the extra that we can remove very easy in Appointment.js ...
             <Link className="btn btn-primary m-1" to="/appointment/details">
-                Timeslot Worked
+                You have worked on these time slots. 
             </Link>
         </div>
             
